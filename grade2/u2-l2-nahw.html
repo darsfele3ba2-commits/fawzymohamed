@@ -388,6 +388,7 @@
         .top-links { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
         .nav-pill { color: #fff; text-decoration: none; font-weight: 700; font-size: 0.95rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(251,191,36,0.6); padding: 6px 16px; border-radius: 30px; transition: background 0.2s; }
         .nav-pill:hover { background: rgba(251,191,36,0.3); }
+            .teacher-photo{width:210px;height:210px;border-radius:50%;border:5px solid #fbbf24;box-shadow:0 8px 18px rgba(0,0,0,.4);background:#fff;object-fit:cover;object-position:center top;flex-shrink:0}@media(max-width:600px){.teacher-photo{width:140px;height:140px}}
     </style>
 </head>
 <body>
@@ -397,6 +398,7 @@
         <div class="header-content">
             <div class="top-links"><a href="../index.html#grade2" class="nav-pill">&#8594; الصفحة الرئيسية</a></div>
             <div style="display: flex; align-items: center; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <img src="../assets/teacher.jpg" alt="الأستاذ فوزي محمد" class="teacher-photo">
                 
                 <!-- النصوص -->
                 <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -1847,7 +1849,7 @@
         optContainer.className = 'genius-options';
 
         let isAnswered = false;
-        const TOTAL_TIME = 12000; // 12 ثانية لكل سؤال
+        const TOTAL_TIME = 40000; // 40 ثانية لكل سؤال
         let startTime = Date.now();
 
         function finishQuestion(isCorrect, selectedText) {
